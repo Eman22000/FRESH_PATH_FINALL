@@ -1,0 +1,116 @@
+.category-section {
+    padding: 80px 20px;
+    background-color: #faf9f7;
+}
+
+.category-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-header {
+    margin-bottom: 60px;
+}
+
+.subtitle {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 48px;
+    color: #1a3c34;
+    line-height: 1.2;
+    margin: 0;
+    font-weight: 500;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+}
+
+@media (min-width: 640px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .category-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.category-card a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+    width: 100%; 
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-container {
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.Diet-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover .Diet-image {
+    transform: scale(1.05);
+}
+
+.Diet-info {
+    padding: 20px;
+}
+
+.Diet-name {
+    margin: 0;
+    font-size: 20px;
+    color: #1a3c34;
+    font-weight: 500;
+}
+
+.Diet-role {
+    margin: 8px 0 0;
+    font-size: 16px;
+    color: #666;
+}
+
+@media (max-width: 639px) {
+    .category-section {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .category-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
